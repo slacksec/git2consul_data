@@ -1,3 +1,34 @@
 {
-	"sample": "configuration"
+    "cosmos": {
+        "id": {
+            "code": "experiments"
+        },
+        "mongo": {
+            "connectionString": "mongodb://experiments:bMXsYH0VIRnNxPnF5N@cosmos-mongodb-prod-cpu-rs1-internal.aws.thlonline.com,cosmos-mongodb-prod-cpu-rs2-internal.aws.thlonline.com,cosmos-mongodb-prod-cpu-rs3-internal.aws.thlonline.com,cosmos-mongodb-prod-cpu-rs4-internal.aws.thlonline.com,cosmos-mongodb-prod-cpu-rs5-internal.aws.thlonline.com/experiments?slaveOk=true"
+        },
+        "elasticsearch": {
+            "connectionString": "http://cosmos-es-prod.aws.thlonline.com"
+        },
+        "authentication": {
+            "authority": "https://accounts.thlonline.com"
+        },
+        "logFile": {
+            "minLevel": "Warn"
+        },
+        "aws": {
+          "s3": {
+            "bucketNames": {
+              "sns": "thl-cosmos-messages-production"
+            }
+          }
+        },
+        "services": {
+            "gateway": {
+                "hostUri": "https://apigateway-production.aws.thlonline.com/v1"
+            },
+            "experiments": {
+                "hostUri": "https://apigateway-production.aws.thlonline.com/v1"
+            }
+        }
+    }
 }
